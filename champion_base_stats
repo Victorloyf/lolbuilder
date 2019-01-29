@@ -1,3 +1,4 @@
+#Draven base stats
 champion_base_health = 2070
 champion_base_damage = 121.4
 champion_base_attack_speed = 0.679
