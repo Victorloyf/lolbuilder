@@ -1,26 +1,32 @@
 class item:
     def __init__(self,hp,ar,mr,ad,aspd,crit,ap,mp,cdr):
+
+        # global Health, Armour, Magic_Resistance
+        # global Attack_Damage, Attack_Speed, Critical_Chance
+        # global Ability_Power, Mana, Cooldown_Reduction
+        # global Selected
+
         # Tank Stats
-        Health = hp
-        Armour = ar
-        Magic_Resistance = mr
+        self.Health = hp
+        self.Armour = ar
+        self.Magic_Resistance = mr
 
         # Attack Damage Stats
-        Attack_Damage = ad
-        Attack_Speed = aspd         #Given as a percent
-        Critical_Chance = crit      #Given as a percent
+        self.Attack_Damage = ad
+        self.Attack_Speed = aspd         #Given as a percent
+        self.Critical_Chance = crit      #Given as a percent
 
         # Mage Stats
-        Ability_Power = ap
-        Mana = mp
-        Cooldown_Reduction = cdr   #Given as a percent
+        self.Ability_Power = ap
+        self.Mana = mp
+        self.Cooldown_Reduction = cdr   #Given as a percent
 
         #Placebo Flag Variable
-        Selected = False
+        self.Selected = False
 
 class all_items:
 
-    #def create_items(self):
+    # def create_items(self):
     def __init__(self):
         Botrk = item(0,0,0,40,25,0,0,0,0)                   #disregard life steal for now
         Death_Dance = item(0,0,0,80,0,0,0,0,10)             #disregard life steal
@@ -33,11 +39,14 @@ class all_items:
         BloodThirster = item(0,0,0,80,0,0,0,0,0)            #disregard passive, lifesteal
         Runaans_Hurricane = item(0,0,0,0,40,30,0,0,0)       #disregard passive
 
-        arr_items = [Botrk,Death_Dance, Infinity_Edge, Stormrazor,
+        self.arr_items = [Botrk, Death_Dance, Infinity_Edge, Stormrazor,
                      Static_Shiv, Rapidfire_Cannon, Phantom_Dancer,
-                     Frozen_Mallet, BloodThirster,Runaans_Hurricane]
+                     Frozen_Mallet, BloodThirster, Runaans_Hurricane]
+
+        # print(arr_items[5].Attack_Speed)
 
 
 test = all_items()
-print(test.arr_items[5].Health)
+print(test.arr_items[5].Attack_Speed)
 
+#Sucess in makaing this run, needs to declare variables with self.VariableName to make it callable
