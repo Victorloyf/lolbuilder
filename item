@@ -1,18 +1,26 @@
 class item:
+    def __init__(self,hp,ar,mr,ad,as,crit,ap,mp,cdr):
+        # Tank Stats
+        Health = hp
+        Armour = ar
+        Magic_Resistance = mr
 
-    # Tank Stats
-    Health = 0
-    Armour = 0
-    Magic_Resistance = 0
+        # Attack Damage Stats
+        Attack_Damage = ad
+        Attack_Speed = as         #Given as a percent
+        Critical_Chance = crit      #Given as a percent
 
-    # Attack Damage Stats
-    Attack_Damage = 0
-    Attack_Speed = 0         #Given as a percent
-    Critical_Chance = 0      #Given as a percent
+        # Mage Stats
+        Ability_Power = ap
+        Mana = mp
+        Cooldown_Reduction = cdr   #Given as a percent
 
-    # Mage Stats
-    Ability_Power = 0
-    Mana = 0
-    Cooldown_Reduction = 0   #Given as a percent
+
+class all_items:
+
+    def create_items(self):
+    Botrk = item(0,0,0,40,25,0,0,0,0)        #disregard life steal for now
+    Death_Dance = item(0,0,0,80,0,0,0,10)    #disregard life steal
+    Infinity_Edge = item()
 
 
