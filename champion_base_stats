@@ -1,5 +1,9 @@
-#Draven base stats
-champion_base_health = 2070
-champion_base_damage = 121.4
-champion_base_attack_speed = 0.679
-champion_base_armor = 85.1
+class base_stats:
+    #Draven base stats at lvl 18
+    Champion_Base_Health = 2070
+
+    Champion_Base_Damage = 121.4
+
+    Champion_Base_Attack_Speed = 0.679
+
+    Champion_Base_Armor = 85.1
