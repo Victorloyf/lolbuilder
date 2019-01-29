@@ -1,1 +1,10 @@
+class enemy_stats:
+    #Leona base stats at lvl 18
 
+    Champion_Base_Health = 2055.2
+
+    Champion_Base_Damage = 111
+
+    Champion_Base_Attack_Speed = 0.625
+
+    Champion_Base_Armor = 108.2
