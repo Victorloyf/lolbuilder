@@ -1,5 +1,5 @@
 class item:
-    def __init__(self,hp,ar,mr,ad,as,crit,ap,mp,cdr):
+    def __init__(self,hp,ar,mr,ad,aspd,crit,ap,mp,cdr):
         # Tank Stats
         Health = hp
         Armour = ar
@@ -7,7 +7,7 @@ class item:
 
         # Attack Damage Stats
         Attack_Damage = ad
-        Attack_Speed = as         #Given as a percent
+        Attack_Speed = aspd         #Given as a percent
         Critical_Chance = crit      #Given as a percent
 
         # Mage Stats
@@ -15,12 +15,20 @@ class item:
         Mana = mp
         Cooldown_Reduction = cdr   #Given as a percent
 
+        #Placebo Flag Variable
+        Selected = False
 
 class all_items:
 
     def create_items(self):
-    Botrk = item(0,0,0,40,25,0,0,0,0)        #disregard life steal for now
-    Death_Dance = item(0,0,0,80,0,0,0,10)    #disregard life steal
-    Infinity_Edge = item()
-
-
+        Botrk = item(0,0,0,40,25,0,0,0,0)                   #disregard life steal for now
+        Death_Dance = item(0,0,0,80,0,0,0,0,10)             #disregard life steal
+        Infinity_Edge = item(0,0,0,70,0,0,0,0,0)            #diregard passive
+        Stormrazor = item(0,0,0,60,35,0,0,0,0)              #disregard passive
+        Static_Shiv = item(0,0,0,0,35,30,0,0,0)             #disregard passive, movespeed
+        Rapidfire_Cannon = item(0,0,0,0,30,30,0,0,0)        #disregard passive, movespeed
+        Phantom_Dancer = item(0,0,0,0,45,30,0,0,0)          #disregard passive, movespeed
+        Frozen_Mallet = item(700,0,0,30,0,0,0,0,0)          #disregard passive
+        BloodThirster = item(0,0,0,80,0,0,0,0,0)            #disregard passive, lifesteal
+        Runaans_Hurricane = item(0,0,0,0,40,30,0,0,0)       #disregard passive
+        
