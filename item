@@ -1,0 +1,18 @@
+class item:
+
+    # Tank Stats
+    Health = 0
+    Armour = 0
+    Magic_Resistance = 0
+
+    # Attack Damage Stats
+    Attack_Damage = 0
+    Attack_Speed = 0         #Given as a percent
+    Critical_Chance = 0      #Given as a percent
+
+    # Mage Stats
+    Ability_Power = 0
+    Mana = 0
+    Cooldown_Reduction = 0   #Given as a percent
+
+
